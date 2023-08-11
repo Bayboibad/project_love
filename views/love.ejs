@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Love</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .title-header {
+            animation: ChangeColor 5s linear infinite;
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0px;
+        }
+
+        @keyframes ChangeColor {
+            0% {
+                color: red;
+            }
+
+            25% {
+                color: rgb(26, 255, 0);
+            }
+
+            50% {
+                color: rgb(228, 129, 227);
+            }
+
+            75% {
+                color: rgb(136, 136, 231);
+            }
+
+            100% {
+                color: rgb(238, 130, 130);
+            }
+        }
+
+        .time-date {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #grad {
+            background-color: #D5D5D5;
+        }
+
+        .run-time-date {
+            background-color: #b9c7da;
+            box-shadow: -5px -5px 10px 0px rgba(201, 244, 240, 0.5), 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .time-one,
+        .date-one {
+            background-color: #565656;
+            color: transparent;
+            text-shadow: 5px 5px 6px rgba(255, 255, 255, 0.5);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+        }
+
+        .heart {
+            cursor: pointer;
+            position: relative;
+            animation: heart 0.6s linear infinite;
+        }
+
+        @keyframes heart {
+            0% {
+                transform: rotate(0deg) scale(1.00);
+            }
+
+            80% {
+                transform: rotate(0deg) scale(0.90);
+            }
+
+            100% {
+                transform: rotate(0deg) scale(0.80);
+            }
+        }
+
+        .heart::before {
+            content: "";
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background: red;
+            top: -55%;
+            border-radius: 50px;
+            box-shadow: -10px 10px 90px red;
+        }
+
+        .heart::after {
+            content: "";
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background: red;
+            right: -55%;
+            border-radius: 50px;
+            box-shadow: -10px 10px 90px red;
+        }
+
+
+        .images {
+            width: 300px;
+            height: 350px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px 0px #27455B;
+        }
+
+        .second {
+            border-color: #27455B;
+            border-style: dashed;
+        }
+
+        .title-name-boy {
+            padding-top: 10px;
+            padding-left: 0px;
+
+        }
+
+        .title-name-boy p {
+            color: #565656;
+            font-weight: bold;
+            font-size: 20px;
+            text-shadow: 5px 5px 6px rgba(255, 255, 255, 0.5);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+        }
+
+        .icon-genden {
+            margin-left: 20px;
+            margin-top: 13px;
+            padding-left: 30px;
+
+        }
+    </style>
+</head>
+
+<body class="container" id="grad">
+
+    <header>
+        <audio controls autoplay id="myAudio" hidden loop>
+            <source src="/audios/giacungnhauladuoc.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="title-header" align="center">
+            <p>MY LOVE </p>
+        </div>
+    </header>
+    <hr style="margin: 0px; padding: 0px;">
+    <article style="height: 700px;">
+        <div class="flex-column time-date " style="height: 170px; margin: 0px;">
+            <p style="text-shadow: 2px  2px  8px  grey;color: rgb(255, 0, 0);">Time - Date</h1>
+            <div class="flex-column run-time-date">
+                <div class="time-one">
+                </div>
+            </div>
+        </div>
+        <hr class="second">
+        <div class="row">
+            <div class="col-4">
+                <div class="child-image">
+                    <div style="width: 350px; height: 450px;border-width: 1px;border-color: aqua;" align="center">
+                        <div class="images">
+                            <img style="border-radius: 10px;"
+                                src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-1/357718604_1638920723253667_4203248810264559247_n.jpg?stp=dst-jpg_p240x240&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=ul7I3qnywC0AX_n50XY&_nc_ht=scontent.fhan5-11.fna&oh=00_AfAhpcxO3M2WPBdqiTXpNxYyptkSRCuoxPvkyYn8mXtEOQ&oe=64DAA5F9"
+                                width="100%" height="100%" alt="image-boy">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-1 icon-genden">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0096c7"
+                                    class="bi bi-gender-male" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z" />
+                                </svg>
+                            </div>
+                            <div class="col-8 title-name-boy">
+                                <p>Một Chút Iu Em</p>
+                            </div>
+                        </div>
+                        <h3 style="margin: 0px;padding: 0px; font-weight: bold;color: rgb(238, 150, 150);">Song Tử</h3>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="child-heart" align="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" style="margin-top: 60px;"
+                        fill="red" class="bi bi-heart-fill heart " viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        <text x="8" y="8" font-family="Arial" style="font-weight: bold; cursor: pointer;" font-size="4"
+                            fill="white" text-anchor="middle" class="date-one"></text>
+                    </svg>
+
+                </div>
+                <!-- <div class="date-one" align="center" style="font-size: 40px; font-weight: bold;">
+                </div> -->
+
+            </div>
+            <div class="col-4">
+                <div class="child-image">
+                    <div style="width: 350px; height: 450px;border-width: 1px;border-color: aqua;" align="center">
+                        <div class="images">
+                            <img style="border-radius: 10px;"
+                                src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/356436318_161353890274798_2427718520223770176_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0bb214&_nc_ohc=qAvEm_9DLSQAX_7aQAB&_nc_oc=AQkTxVRxYG2-TYfyxATxLPmgxJTBf7IIZuWgpV9TE2XpUqgEC42lSNj9w99aycWojGU&_nc_ht=scontent.fhan5-8.fna&oh=00_AfBXWe8jRiYxVkEHXM7SPi80Qr0RG741fYhzfIHDogTy4g&oe=64DC0198"
+                                width="100%" height="100%" alt="image-boy">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-1 icon-genden">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#af4d98"
+                                    class="bi bi-gender-female" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z" />
+                                </svg>
+                            </div>
+                            <div class="col-8 title-name-boy">
+                                <p>Một Chút Iu Anh</p>
+                            </div>
+                        </div>
+                        <h3 style="margin: 0px;padding: 0px; font-weight: bold;color: rgb(238, 150, 150);">Kim Ngưu</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </article>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+
+        function daysBetweenDates(date1, date2) {
+            const d1 = new Date(date1.getFullYear(), date1.getMonth(), date1.getDate());
+            const d2 = new Date(date2.getFullYear(), date2.getMonth(), date2.getDate());
+            const oneDay = 24 * 60 * 60 * 1000; // milliseconds in one day
+            return Math.round(Math.abs((d1 - d2) / oneDay));
+        }
+
+
+        function updateTime() {
+            const timeDateDiv = document.querySelector('.time-date');
+            const timeOne = document.querySelector('.time-one');
+            const dateOne = document.querySelector('.date-one');
+
+            // Get the current date and time
+            const now = new Date();
+
+            // Date since we start counting (1st October 2021)
+            const startDate = new Date(2021, 9, 1);
+
+            // Calculate number of days from start date to now
+            const daysRunning = daysBetweenDates(now, startDate);
+
+            // Convert the time to a formatted string (e.g., "12:34:56")
+            const timeString = now.toLocaleTimeString();
+
+            // Set the text content of the div to show days and the formatted time string
+            timeOne.textContent = `${timeString}`;
+            dateOne.textContent = `${daysRunning}`;
+        }
+
+
+        // Update the time immediately when the page loads
+        updateTime();
+
+        // Then update the time every second
+        setInterval(updateTime, 1000);
+        // Function to handle heart click
+        function playAudioOnHeartClick() {
+            const audioElement = document.getElementById('myAudio');
+            if (audioElement.paused) {
+                audioElement.play();
+            } else {
+                audioElement.pause();
+            }
+        }
+
+        // Attach the function to the heart click event
+        const heartElement = document.querySelector('.heart');
+        heartElement.addEventListener('click', playAudioOnHeartClick);
+
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
