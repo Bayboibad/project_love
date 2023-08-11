@@ -6,8 +6,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/357718604_1638920723253667_4203248810264559247_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ul7I3qnywC0AX_n50XY&_nc_ht=scontent.fhan5-11.fna&oh=00_AfC7AkXWmy1RMhrEUw01Ny7KSxgxAqM7z2ICaOVBUgde3g&oe=64D9767B">
- 
+    <link rel="icon"
+        href="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/357718604_1638920723253667_4203248810264559247_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=ul7I3qnywC0AX_n50XY&_nc_ht=scontent.fhan5-11.fna&oh=00_AfC7AkXWmy1RMhrEUw01Ny7KSxgxAqM7z2ICaOVBUgde3g&oe=64D9767B">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -48,6 +49,8 @@
             align-items: center;
             font-size: 24px;
             font-weight: bold;
+            height: 170px;
+            margin: 0px;
         }
 
         #grad {
@@ -149,33 +152,46 @@
             padding-left: 30px;
 
         }
-        @media (max-width: 576px) { /* Điều chỉnh cho màn hình điện thoại */
-        .child-image, .child-heart {
-            margin-bottom: 20px;
+
+        article {
+            height: 700px;
         }
 
-        .images {
-            width: 100%;
-            height: auto;
+        .child-image1 {
+            width: 350px;
+            height: 450px;
+            border-width: 1px;
+            border-color: aqua;
         }
 
-        .bi-heart-fill {
-            width: 100px;
-            height: 100px;
-        }
+        @media (max-width: 576px) {
 
-        .title-name-boy p {
-            font-size: 16px;
-        }
+            /* Điều chỉnh cho màn hình điện thoại */
+            .child-image,
+            .child-heart {
+                margin-bottom: 20px;
+            }
 
-        .time-date {
-            font-size: 18px;
-        }
+            .images {
+                width: 90%;
+                /* Điều chỉnh chiều rộng ảnh */
+                height: auto;
+                /* Cho phép ảnh tự động điều chỉnh chiều cao dựa trên chiều rộng */
+                margin: 0 auto;
+                /* Căn giữa ảnh */
+            }
 
-        .time-one, .date-one {
-            font-size: 16px;
+            .child-image1 {
+                width: 90%;
+                /* Điều chỉnh chiều rộng ảnh */
+                height: auto;
+                /* Cho phép ảnh tự động điều chỉnh chiều cao dựa trên chiều rộng */
+                border-width: 1px;
+                border-color: aqua;
+                margin: 0 auto;
+                /* Căn giữa ảnh */
+            }
         }
-    }
     </style>
 </head>
 
@@ -191,8 +207,8 @@
         </div>
     </header>
     <hr style="margin: 0px; padding: 0px;">
-    <article style="height: 700px;">
-        <div class="flex-column time-date " style="height: 170px; margin: 0px;">
+    <article>
+        <div class="flex-column time-date ">
             <p style="text-shadow: 2px  2px  8px  grey;color: rgb(255, 0, 0);">Time - Date</h1>
             <div class="flex-column run-time-date">
                 <div class="time-one">
@@ -203,7 +219,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-12">
                 <div class="child-image">
-                    <div style="width: 350px; height: 450px;border-width: 1px;border-color: aqua;" align="center">
+                    <div class="child-image1" align="center">
                         <div class="images">
                             <img style="border-radius: 10px;"
                                 src="https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-1/357718604_1638920723253667_4203248810264559247_n.jpg?stp=dst-jpg_p240x240&_nc_cat=103&ccb=1-7&_nc_sid=7206a8&_nc_ohc=ul7I3qnywC0AX_n50XY&_nc_ht=scontent.fhan5-11.fna&oh=00_AfAhpcxO3M2WPBdqiTXpNxYyptkSRCuoxPvkyYn8mXtEOQ&oe=64DAA5F9"
@@ -229,13 +245,11 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="child-heart" align="center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" style="margin-top: 60px;"
-                        fill="red" class="bi bi-heart-fill heart " viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
-                        <text x="8" y="8" font-family="Arial" style="font-weight: bold; cursor: pointer;" font-size="4"
-                            fill="white" text-anchor="middle" class="date-one"></text>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" style="margin-top: 60px;" fill="red" class="bi bi-heart-fill heart" viewBox="0 0 16 16" preserveAspectRatio="xMidYMid meet">
+                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                        <text x="8" y="8" font-family="Arial" style="font-weight: bold; cursor: pointer;" font-size="4" fill="white" text-anchor="middle" class="date-one"></text>
                     </svg>
+                    
 
                 </div>
                 <!-- <div class="date-one" align="center" style="font-size: 40px; font-weight: bold;">
@@ -244,7 +258,7 @@
             </div>
             <div class="col-md-4 col-sm-12">
                 <div class="child-image">
-                    <div style="width: 350px; height: 450px;border-width: 1px;border-color: aqua;" align="center">
+                    <div class="child-image1" align="center">
                         <div class="images">
                             <img style="border-radius: 10px;"
                                 src="https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/356436318_161353890274798_2427718520223770176_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0bb214&_nc_ohc=qAvEm_9DLSQAX_7aQAB&_nc_oc=AQkTxVRxYG2-TYfyxATxLPmgxJTBf7IIZuWgpV9TE2XpUqgEC42lSNj9w99aycWojGU&_nc_ht=scontent.fhan5-8.fna&oh=00_AfBXWe8jRiYxVkEHXM7SPi80Qr0RG741fYhzfIHDogTy4g&oe=64DC0198"
