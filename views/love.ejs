@@ -376,6 +376,15 @@
         const heartElement = document.querySelector('.heart');
         heartElement.addEventListener('click', playAudioOnHeartClick);
 
+
+
+        function displayMobileAlert() {
+        if (window.innerWidth <= 576) {
+            alert('Bạn nhấn hình ❤ sẽ có nhạc ...');
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", displayMobileAlert);
     </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
